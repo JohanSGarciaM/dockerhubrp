@@ -27,7 +27,7 @@ Debemos clonar el repositorio a la máquina local con el siguiente comando:
 `git clone https://github.com/JohanSGarciaM/dockerhubrp.git`
 
 ### Ubicar el proyecto
-Nos ubicamos en la carpeta /BonoParcial 
+Nos ubicamos en la carpeta /dockerhubrp 
 `cd dockerhubrp`
 
 ### Compilar el proyecto
@@ -44,6 +44,19 @@ Una vez el servidor se encuentre activado nos dirigimos al navegador y solicitam
 
 Debemos indicar la operación dentro de la URL y los parámetros  como se indíca en las funcionalidades del proyecto descritas anteriormente
 `localhost:4567/index`
+
+---
+
+En caso de descargar la imagen de dockerhub, se debe utilizar el siguiente comando
+`docker pull johansgarciam/firstdockerspark:latest`
+
+despues debemos crear y correr el contenedor con los puertos correspondientes 
+
+`docker run -d -p 34000:46000 --name container johansgarciam/firstdockerspark`
+
+ahora una vez corriendo el contenedor, en el browser buscamos la dirección estipulada para el servicio
+
+`localhost:34000/index`
 
 ![](/src/resources/img1.png)
 
